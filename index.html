@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$AURAV's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0994de29d7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>WEB Designer/Developer</p>
+                <h1>Hi, I'm <span>Saurav Upadhyay</span> <br>from Jaunpur,Uttar Pradesh,INDIA</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Saurav Upadhyay. I have done my B.tech from Galgotias College of Engineering &
+                        Technology, Greater Noida, U.P., India.
+                        My majors are Electrical & Electronics and my Minors are Web Development. <br>
+                        I am Technological enthusiast who likes to learn and explore various technological advancements.
+                        Seeking a responsible carrier to achieve organizational goal and reach the pinnacle of success
+                        by utilizing my educational background and skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML5,CSS3,JAVASCRIPT,ReactJS</li>
+                            <li><span>Languages</span><br>Python Programming Language</li>
+                            <li><span>Merge & Versoning</span><br>Git/Github</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2023</span><br>B.tech from GCET,Greater-Noida, U.P.</li>
+                            <li><span>2023</span><br>Web Development Intern from Code Clause.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>March,2021</span><br>Python Programming- A practical approach from IIT Kanpur</li>
+                            <li><span>Nov,2023</span><br>ReactJS including React router and Redux from Udemy </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-music"></i>
+                    <h2>Spotify Clone</h2>
+                    <p>Using HTML5,CSS3 & JAVASCRIPT, I have developed a clone of a music app which plays a music named Spotify Clone.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Tic-Tac-Toe Game</h2>
+                    <p>Using HTML5,CSS3 & JAVASCRIPT, I have developed a game app named Tic-Tac-Toe, which involves two individuals </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Weather App</h2>
+                    <p>Using HTML5,CSS3,JAVASCRIPT & Rapid API, I have developed a Weather app which tells about live weather of any city.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h1>Spotify Clone</h1>
+                        <p>I have developed a website-app a clone of Spotify which is available on Git-Hub.</p>
+                        <a href="https://usaurav.github.io/SpotifyClone/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h1>Tic-Tac-Toe</h1>
+                        <p>I have developed a game website-app which is available on Git-Hub.</p>
+                        <a href="https://usaurav.github.io/Tic-Tac-Toe/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h1>Weather App</h1>
+                        <p>I have developed a Live Weather website-app which is available on Git-Hub.</p>
+                        <a href="https://usaurav.github.io/WeatherApp/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/usaurav" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> sauravup2002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-9170955121</p>
+                    <div class="social-icons">
+                        <a href="http://linkedin.com/in/saurav-upadhyay-189610246"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/usaurav"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/myCV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-solid fa-copyright"></i> Copyright @ Saurav Upadhyay</p>
+        </div>
+    </div>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwMSkWtPw3cxAJluaABMxgq8bq3uv3lGkGwTB7nknHEGw0MxOy-gJcwiwouvXAgVw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = " "
+                    }, 5000);
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
